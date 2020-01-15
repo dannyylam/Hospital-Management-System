@@ -1,0 +1,53 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 CREATE SCHEMA `hospital` ;\
+\
+CREATE TABLE `hospital`.`admin` (\
+  `adminID` INT(5) NOT NULL AUTO_INCREMENT,\
+  `username` VARCHAR(45) NULL,\
+  `password` VARCHAR(45) NULL,\
+  `email` VARCHAR(45) NULL,\
+  PRIMARY KEY (`adminID`));\
+\
+CREATE TABLE `hospital`.`doctor` (\
+  `drID` INT(5) NOT NULL AUTO_INCREMENT,\
+  `drFirst` VARCHAR(45) NULL,\
+  `drLast` VARCHAR(45) NULL,\
+  `drAge` INT(3) NULL,\
+  `drGender` VARCHAR(45) NULL,\
+  `drSpecialization` VARCHAR(45) NULL,\
+  `drSalary` INT NULL,\
+  PRIMARY KEY (`dID`));\
+\
+CREATE TABLE `hospital`.`patient` (\
+  `pID` INT NOT NULL AUTO_INCREMENT,\
+  `pFirst` VARCHAR(45) NULL,\
+  `pLast` VARCHAR(45) NULL,\
+  `pAge` INT(3) NULL,\
+  `pGender` VARCHAR(45) NULL,\
+  `pProblem` VARCHAR(45) NULL,\
+  `roomID` INT(5) NULL,\
+  `pDoctor` INT(5) NULL,\
+  PRIMARY KEY (`pID`));\
+\
+CREATE TABLE `hospital`.`room` (\
+  `roomID` INT(5) NOT NULL AUTO_INCREMENT,\
+  `roomType` VARCHAR(45) NULL,\
+  `roomPatient` INT(5) NULL,\
+  PRIMARY KEY (`roomID`));\
+\
+INSERT INTO doctor\
+VALUES (1, \'91Barack\'92,\'92Obama\'92, 57, \'91Male\'92, \'91Radiology\'92, 56294);\
+\
+INSERT INTO patient\
+VALUE (1,\'92Porter\'92,\'92Robinson\'92,27, \'91Male\'92,\'92Breathing,8, \'91Dr. Targaryen\'92);\
+\
+INSERT INTO room\
+VALUE (1,\'92Trauma\'92, 2);\
+\
+}
