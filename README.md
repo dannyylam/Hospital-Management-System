@@ -25,9 +25,12 @@ This is the Patient Detail page where you can check in patients, update their in
 <img src="Output_Screenshots/Screen Shot 2019-06-09 at 11.56.57 PM.png">
 
 For the “Doctor” combo box, there will be a list of the available doctors that are currently working in the hospital. When new doctors are hired, their name will be loaded into the combo box. Patients are then assigned a doctor (based on their problem and the doctor’s specialization).
+
 <img src="Output_Screenshots/Screen Shot 2019-06-10 at 2.44.38 AM.png">
 
-Conclusion:
+
+
+**Conclusion:**
 I learned a lot during the process of this project. I learned how to many techniques of Object-Oriented Programming.
 I also learned how to implement the JDBC API to connect the frontend and the backend of the application. 
 One part I struggled a lot with was loading the table from MySQL 
