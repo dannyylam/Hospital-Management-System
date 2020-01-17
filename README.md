@@ -1,5 +1,5 @@
-# Hotel_Management_System
-Hotel Management System web application using Java, MySQL, FXML, JavaFX
+# Hospital_Management_System
+Hospital Management System web application using Java, MySQL, FXML, JavaFX
 <img src="Output_Screenshots/Screen Shot 2019-06-09 at 11.49.26 PM.png">
 
 Register as a new user. Enter your username, password, and email.
@@ -30,7 +30,7 @@ For the “Doctor” combo box, there will be a list of the available doctors th
 
 
 
-**Conclusion:**
+**What I learned:**
 I learned a lot during the process of this project. I learned how to many techniques of Object-Oriented Programming.
 I also learned how to implement the JDBC API to connect the frontend and the backend of the application. 
 One part I struggled a lot with was loading the table from MySQL 
